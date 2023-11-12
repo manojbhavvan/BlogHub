@@ -1,10 +1,4 @@
 # start.sh
-cd backend/
-npm i
-cd ..
-cd frontend/
-npm i
-cd ..
 
 # Start the backend server
 node backend/index.js &
