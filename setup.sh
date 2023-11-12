@@ -1,7 +1,7 @@
 # setup.sh
-cd backend/
+cd backend
 npm i
 cd ..
-cd frontend/
+cd frontend
 npm i
 cd ..
