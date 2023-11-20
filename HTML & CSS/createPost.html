@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+  <title>login page</title>
+  <link rel="stylesheet"  href="createPost.css">
+</head>
+<body>
+    <section className='newPost'>
+      <div className='container boxItems'>
+        <h3>Select Image</h3>
+        <div className='img '>{file && <img src={URL.createObjectURL(file)} alt='images' />}</div>
+        <form onSubmit={handleSubmit}>
+          <div className='inputfile flexCenter'>
+            <label htmlFor='inputfile'>
+              <IoIosAddCircleOutline />
+            </label>
+            <input type='file' id='inputfile' />
+          </div>
+          <input type='text' placeholder='Title'/>
+          <textarea name='' id='' placeholder='Description' cols='30' rows='10'></textarea>
+          <button className='button'>Create Post</button>
+        </form>
+      </div>
+    </section>
+</body>
+</html>
